@@ -70,6 +70,12 @@ namespace Microsoft.PowerToys.Settings.UI
         private void Window_Closed(object sender, WindowEventArgs args)
         {
             App.ClearOobeWindow();
+
+            var mainWindow = App.GetSettingsWindow();
+            if (mainWindow != null)
+            {
+                mainWindow.CloseHiddenWindow();
+            }
         }
     }
 }

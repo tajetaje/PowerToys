@@ -43,6 +43,9 @@ namespace Microsoft.PowerToys.Settings.UI.Helpers
         public static extern bool ShowWindow(System.IntPtr hWnd, int nCmdShow);
 
         [DllImport("user32.dll")]
+        public static extern bool IsWindowVisible(IntPtr hWnd);
+
+        [DllImport("user32.dll")]
         public static extern bool AllowSetForegroundWindow(int dwProcessId);
 
         [DllImport("kernel32.dll", CharSet = CharSet.Unicode)]
