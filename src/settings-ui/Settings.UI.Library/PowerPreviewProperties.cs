@@ -182,6 +182,17 @@ namespace Microsoft.PowerToys.Settings.UI.Library
             }
         }
 
+        private PowerPreviewCustomTextFileTypeProperty customTextFileType = new PowerPreviewCustomTextFileTypeProperty();
+
+        [JsonPropertyName("custom-text-file-type")]
+        public PowerPreviewCustomTextFileTypeProperty CustomTextFileType { get; set; }
+
+        private PowerPreviewCustomTextFileTypes customTextFileTypes = new PowerPreviewCustomTextFileTypes();
+
+        [JsonPropertyName("custom-text-file-types")]
+        public PowerPreviewCustomTextFileTypes CustomTextFileTypes { get; set; }
+
+
         public PowerPreviewProperties()
         {
         }
